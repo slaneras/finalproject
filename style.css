@@ -1,0 +1,182 @@
+/*global*/
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2 {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    font-family: 'Crimson Text', serif;
+}
+
+/*background*/
+
+.home {
+    background: #000 url(temprange.jpg) top center no-repeat;
+    background-size: cover;
+}
+.about {
+    background: #000 url(temp2.jpg) top center no-repeat;
+    background-size: cover;
+}
+.dsa {
+    background: #000 url(gunaim.jpg) top center no-repeat;
+    background-size: cover;
+}
+.tryout {
+    background: #000 url(sniper.jpg) top center no-repeat;
+    background-size: cover;
+}
+.holiday {
+    background: #000 url(jamesbond.jpg) top center no-repeat;
+    background-size: cover;
+}
+.contact {
+    background: #000 url(phone.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+
+/*navigation bar*/
+
+#top {
+    height: 42px;
+    padding: 0px;
+    background-color: white;
+    opacity: 0.7;
+}
+#logo {
+    float: left;
+    padding: 0px 40px;
+    margin: 0px;
+}
+.name {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    margin: 0px;
+}
+#nav ul {
+    list-style: none;
+    position: relative;
+    float: right;
+    padding: 0px 20px;
+    margin: 0;
+}
+#nav ul a {
+    display: block;
+}
+#nav ul li {
+    position: relative;
+    float: right;
+    padding: 10px 15px;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 0;
+}
+#nav ul ul li {
+    float: none;
+    background-color: white;
+    width: 70px;
+}
+#nav ul li:hover {
+    background-color: #d9dce0;
+}
+#nav ul li:hover>ul {
+    display: block;
+}
+#nav ul ul li:hover {
+    background-color: #d9dce0;
+}
+
+/*home*/
+
+.carousel {
+    background-color: white;
+    opacity: 0.7;
+    width: 23%;
+    height: 20%;
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 950px;
+    padding: 10px;
+    overflow: hidden;
+}
+h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.bite {
+    text-align: justify;
+    margin: 5px 0px 8px 0px;
+}
+.more {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.more:hover{
+  text-decoration: underline;
+}
+
+/*subpages*/
+
+#textarea {
+    height: auto;
+    background-color: white;
+    opacity: 0.8;
+    margin: auto;
+    padding: 10px;
+}
+.about #textarea {
+    margin-top: 350px;
+    width: 80%;
+}
+.dsa #textarea {
+    margin-top: 50px;
+    width: 60%;
+}
+.tryout #textarea {
+    margin-top: 100px;
+    margin-left: 550px;
+    width: 40%;
+}
+.holiday #textarea {
+    margin-top: 200px;
+    margin-left: 850px;
+    width: 30%;
+}
+.contact #textarea{
+  margin-top:100px;
+  width: 50%;
+}
+.dsa #textarea a:hover{
+  text-decoration: underline;
+}
+
+/*contact*/
+#name, #email {
+  width: 30%;
+  font: inherit;
+}
+
+textarea{
+  font: inherit;
+}
+
+/*responsive*/
+
+@media (max-width: 700px) {
+    .carousel {
+        margin-left: 10px;
+    }
+    .tryout #textarea, .holiday #textarea{
+      margin-left: 10px;
+    }
+}

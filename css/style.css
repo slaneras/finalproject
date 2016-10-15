@@ -16,27 +16,27 @@ body {
 /*background*/
 
 .home {
-    background: #000 url(temprange.jpg) top center no-repeat;
-    background-size: cover;
+    background: #000 url(../images/temprange.jpg) top center no-repeat;
+    background-size:cover;
 }
 .about {
-    background: #000 url(temp2.jpg) top center no-repeat;
+    background: #000 url(../images/temp2.jpg) top center no-repeat;
     background-size: cover;
 }
 .dsa {
-    background: #000 url(gunaim.jpg) top center no-repeat;
+    background: #000 url(../images/gunaim.jpg) top center no-repeat;
     background-size: cover;
 }
 .tryout {
-    background: #000 url(sniper.jpg) top center no-repeat;
+    background: #000 url(../images/sniper.jpg) top center no-repeat;
     background-size: cover;
 }
 .holiday {
-    background: #000 url(jamesbond.jpg) top center no-repeat;
+    background: #000 url(../images/jamesbond.jpg) top center no-repeat;
     background-size: cover;
 }
 .contact {
-    background: #000 url(phone.jpg) top center no-repeat;
+    background: #000 url(../images/phone.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -103,9 +103,9 @@ body {
     opacity: 0.7;
     width: 23%;
     height: 20%;
-    position: fixed;
+    float:right;
+    margin-right: 50px;
     margin-top: 250px;
-    margin-left: 950px;
     padding: 10px;
     overflow: hidden;
 }
@@ -154,7 +154,7 @@ h1 {
 }
 .contact #textarea{
   margin-top:100px;
-  width: 50%;
+  width: 60%;
 }
 .dsa #textarea a:hover{
   text-decoration: underline;
@@ -166,16 +166,18 @@ h1 {
   font: inherit;
 }
 
+#map, #form{
+  display:inline-block;
+  margin: 10px;
+}
+
 textarea{
   font: inherit;
 }
 
 /*responsive*/
 
-@media (max-width: 700px) {
-    .carousel {
-        margin-left: 10px;
-    }
+@media (max-width: 1000px) {
     .tryout #textarea, .holiday #textarea{
       margin-left: 10px;
     }

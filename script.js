@@ -10,13 +10,13 @@ $(document).ready(function() {
         .mouseleave(function() {
             timer = setInterval(function() {
                 $('.carousel > div:first')
-                    .fadeOut(3000, function() {
+                    .fadeOut(2000, function() {
                         $(this).next()
-                            .fadeIn(3000)
+                            .fadeIn(2000)
                         $(this).appendTo('.carousel');
                     })
                     // .end()
-            }, 3000);
+            }, 2000);
             // timer = setInterval(function() {
             //     var visibleDiv = $('.carousel > div:visible')
             //     var nextDiv = visibleDiv.next().length ? visibleDiv.next() : $('.carousel > div:first')
